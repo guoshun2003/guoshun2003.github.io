@@ -1,0 +1,158 @@
+.header {
+  height: 13vh;
+  background-color: #00309c;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.header-slogan {
+  font-size: 12px;
+  font-family: "宋体";
+  font-weight: bold;
+  margin: auto 20px;
+  overflow: hidden;
+}
+.header-slogan-date {
+  color: #f8941f;
+  margin: 12px 6px;
+}
+.header-slogan-salutation {
+  margin-left: 3em;
+  color: #dbe2f7;
+}
+
+.header-slogan-salutation em {
+  font-style: italic;
+  /* animation: blink 1s infinite; */
+}
+
+
+@keyframes blink {
+  0% { opacity: 0.9; }
+  50% { opacity: 0.6; }
+  100% { opacity: 0.9; }
+}
+
+.header-slogan-salutation span {
+  font-style: italic;
+  animation: blink 3s infinite;
+}
+
+.header-author {
+  text-align: right;
+  margin: 3px 6px;
+}
+
+.header-border {
+  height: 1px;
+  width: 100%;
+}
+
+.main {
+  height: 74vh;
+  background-image: url(../image/bg.gif);
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.main-left {
+  margin-right: 36px;
+}
+
+.main-center {
+  width: 1px;
+  height: 100%;
+  margin: 0 10px;
+}
+
+.main-center img {
+  width: 50%;
+  height: 50%;
+}
+
+.main-right {
+  margin-left: 10px;
+}
+
+.footer {
+  height: 13vh;
+  width: 100%;
+  background-color: #00309c;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  overflow: hidden;
+}
+
+.footer-border {
+  height: 1px;
+  width: 100%;
+}
+
+.footer-content {
+  width: 100%;
+  height: calc(13vh-1px);
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.footer-content-left {
+  width: 240px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-content-left a:nth-child(2n + 1) {
+  width: 40px;
+}
+
+.footer-content-left a:nth-child(2n) {
+  width: 80px;
+  color: #f8941f;
+  font-weight: bold;
+  font-size: 14px;
+  font-family: "宋体";
+}
+
+.footer-content-right {
+  margin: 10px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.footer-content-right strong {
+  color: #dbe2f7;
+  margin-bottom: 20px;
+  font-size: 12px;
+  font-family: "宋体";
+  font-weight: bold;
+}
+
+.footer-content-right p {
+  font-size: 9px;
+  margin-top: 4px;
+  font-family: "Verdana";
+  color: #dbe2f7;
+}
+
+.footer-content-right p em {
+  font-size: 9px;
+  font-weight: bold;
+  color: white;
+  font-style: italic;
+}
